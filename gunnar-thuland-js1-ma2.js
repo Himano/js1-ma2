@@ -28,13 +28,21 @@ myFunctionExpression();
 
    const selectButtonByTag = document.querySelector("button");
 
-    function addClassByHover() {
+    function addClass() {
         selectButtonByTag.classList.add("hover");
     }
 
-    selectButtonByTag.addEventListener("mouseover", addClassByHover);
+    selectButtonByTag.addEventListener("mouseover", addClass);
 
 //Question 5
+
+const selectButtonByData = document.querySelector("[data-animal='dog']");
+    
+    function removeClass() {
+        selectButtonByData.classList.remove("hover");
+    }
+
+    selectButtonByData.addEventListener("mouseout", removeClass);
 
 //Question 6
 
